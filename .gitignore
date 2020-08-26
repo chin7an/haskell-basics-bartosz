@@ -2,6 +2,15 @@
 # Created by https://www.toptal.com/developers/gitignore/api/macos,linux,visualstudiocode,intellij,haskell
 # Edit at https://www.toptal.com/developers/gitignore?templates=macos,linux,visualstudiocode,intellij,haskell
 
+# Ignore all
+*
+
+# Unignore all with extensions
+!*.*
+
+# Unignore all dirs
+!*/
+
 ### Haskell ###
 dist
 dist-*

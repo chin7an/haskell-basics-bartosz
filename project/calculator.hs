@@ -1,4 +1,8 @@
-data Token
+data Token = TokOp Operator
+            | TokIdent String
+            | TokNum Int
+    deriving (Show, Eq)
+
 data Expression
 
 -- arrow '->' defines a function type
@@ -22,7 +26,7 @@ loop n = do
     else
         return ()
 
--- main always has to return an IO action, as previously learned
+-- main has to return an IO action, as previously learned
 -- The braces '()' is a unit, somewhat similar to void in c & c-like languages
 main :: IO ()
 main = loop 0
